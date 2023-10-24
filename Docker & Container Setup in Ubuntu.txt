@@ -1,0 +1,30 @@
+Docker__SetUp
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Install Docker
+sudo su
+apt update
+apt install -y docker.io
+systemctl status docker
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Docker run -it centos
+
+(To check running container)
+docker ps 
+
+(To check every container)
+docker ps -a
+
+docker run --name test0 -it centos
+
+(to start Docker Container)
+docker start <ContainerId|Conatiner Name>
+
+
+(To delete Container)
+docker rm <ContainerID>
+
+(To Stop Container)
+docker stop <ContainerID>
